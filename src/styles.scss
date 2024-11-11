@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.cdk-overlay-container .mat-mdc-tooltip {
+    --mdc-plain-tooltip-container-color: #000;
+    --mdc-plain-tooltip-supporting-text-color: white;
+    --mdc-plain-tooltip-container-shape: 4px;
+    --mdc-plain-tooltip-supporting-text-line-height: 16px;
+    --mdc-plain-tooltip-supporting-text-size: 12px;
+    --mdc-plain-tooltip-supporting-text-weight: 400;
+    --mdc-tooltip-word-break: normal;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+  }

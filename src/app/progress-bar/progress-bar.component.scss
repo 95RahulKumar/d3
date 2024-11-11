@@ -1,0 +1,13 @@
+
+
+  ::ng-deep .mat-tooltip {
+    /* Custom styles for tooltip if needed */
+    font-size: 14px;  /* Font size */
+    padding: 5px;     /* Padding around the tooltip text */
+  }
+
+
+  .timeline-container {
+    position: relative;  /* Ensure the container is positioned correctly */
+    display: inline-block; /* Ensure it doesn’t take up the entire width */
+  }
