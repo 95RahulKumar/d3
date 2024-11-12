@@ -13,7 +13,7 @@ export class ProgressBarComponent implements AfterViewInit, OnChanges {
   @Input() value: number = 0; 
   @Input() width: number = 180;
   @ViewChild('timelineContainer', { static: true }) timelineContainer!: ElementRef;
-
+  // @ViewChild('circle', { static: true }) circle!: ElementRef;
   ngAfterViewInit(): void {
     this.drawProgressBar();
   }
@@ -26,6 +26,24 @@ export class ProgressBarComponent implements AfterViewInit, OnChanges {
   }
 
   drawProgressBar(): void {
+
+  //  const circle =  d3.select(this.circle.nativeElement)
+  //  circle.selectAll('*').remove(); 
+  //  const circleSvg = circle.append('svg');
+  //  circleSvg.append('circle')
+  //  .attr('cx','25')
+  //  .attr('cy','25')
+  //  .attr('r','15')
+  //  .transition()
+  //  .duration(1000)
+  //  .delay(1000)
+  //  .ease(d3.easeCubic)
+  //  .attr('r','25')  
+  //  .attr('cy','50')   
+  //  .attr('cx','50')
+  //  circle.interrupt()
+
+
     const container = d3.select(this.timelineContainer.nativeElement);
     container.selectAll('*').remove(); 
     const svg = container.append('svg');
